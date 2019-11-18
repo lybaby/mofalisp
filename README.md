@@ -5,7 +5,7 @@ enjoy the fun of it.
 
 todolist:
 
-1. lexer
+1. lexer (developing)
 2. parser
 3. vm
 4. bytecode
