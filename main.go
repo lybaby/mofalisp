@@ -9,7 +9,9 @@ import (
 func main() {
 	fmt.Println("hello, mofalisp")
 
-	parser:=mofa.NewParser("")
+	code:=mofa.LoadFile("./examples/base.lisp")
+
+	parser:=mofa.NewParser(code)
 
 	parser.Parse()
 }

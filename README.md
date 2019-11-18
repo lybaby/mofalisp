@@ -5,9 +5,9 @@ enjoy the fun of it.
 
 todolist:
 
-1. lexer (developing)
-2. parser
-3. vm
+1. lexer (partial)
+2. parser (partial)
+3. vm (developing)
 4. bytecode
 5. gui
 6. std library

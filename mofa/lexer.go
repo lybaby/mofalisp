@@ -49,6 +49,7 @@ func NewLexer(source string) *Lexer {
 	lex.sourceLen = len(lex.source)
 	lex.cc = 0
 	lex.pc = 0
+	lex.nextChar()
 	return lex
 }
 
@@ -98,9 +99,11 @@ func (lex *Lexer) NextToken() {
 		case '(':
 			lex.token = "("
 			lex.tokenType = TTLBRK
+			lex.nextChar()
 		case ')':
 			lex.token = ")"
 			lex.tokenType = TTRBRK
+			lex.nextChar()
 		default:
 			panic("unknown char: " + string(lex.cc))
 		}
