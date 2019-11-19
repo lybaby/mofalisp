@@ -1,6 +1,9 @@
 # mofalisp
 
 mofalisp is a small lisp dialect and interpreter.
+
+The meaning of mofa in Chinese is magic.
+
 enjoy the fun of it.
 
 todolist:
