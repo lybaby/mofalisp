@@ -7,11 +7,14 @@ import (
 )
 
 func main() {
-	fmt.Println("hello, mofalisp")
-
+	fmt.Println("mofalisp v0.0.1 by devilandpuppy")
+	fmt.Println()
+	
 	code:=mofa.LoadFile("./examples/base.lisp")
 
 	parser:=mofa.NewParser(code)
 
-	parser.Parse()
+	node:=parser.Parse()
+
+	mofa.Eval(node)
 }
