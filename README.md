@@ -1,6 +1,6 @@
 # mofalisp
 
-mofalisp is a small lisp dialect and interpreter.
+mofalisp is a small lisp dialect and interpreter in golang.
 
 The meaning of mofa in Chinese is magic.
 
@@ -16,3 +16,9 @@ todolist:
 6. std library
 7. network
 8. repl
+
+```lisp
+(progn
+  (define x "hello")
+  (print x "world))
+```
